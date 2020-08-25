@@ -1,7 +1,7 @@
 //this JS is take from https://www.w3schools.com/howto/howto_js_vertical_tabs.asp
-function openEntry(evt, EntryName) {
+const openEntry(evt, EntryName) {
   // Declare all variables
-  var i, tabcontent, tablinks;
+  let i, tabcontent, tablinks;
 
   // Get all elements with class="tabcontent" and hide them
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -18,3 +18,4 @@ function openEntry(evt, EntryName) {
   // Show the current tab, and add an "active" class to the link that opened the tab
   document.getElementById(EntryName).style.display = "block";
   evt.currentTarget.className += " active";
+}
