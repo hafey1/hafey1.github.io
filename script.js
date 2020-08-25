@@ -1,4 +1,9 @@
 //this JS is take from https://www.w3schools.com/howto/howto_js_vertical_tabs.asp
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
 function openEntry(evt, EntryName) {
   // Declare all variables
   var i, tabcontent, tablinks;
