@@ -1,7 +1,7 @@
 //this JS is take from https://www.w3schools.com/howto/howto_js_vertical_tabs.asp
-const openEntry(evt, EntryName) {
+function openEntry(evt, EntryName) {
   // Declare all variables
-  let i, tabcontent, tablinks;
+  var i, tabcontent, tablinks;
 
   // Get all elements with class="tabcontent" and hide them
   tabcontent = document.getElementsByClassName("tabcontent");
