@@ -22,5 +22,6 @@ function openEntry(evt, EntryName) {
   console.log("bleh you clicked me m8")
   // Show the current tab, and add an "active" class to the link that opened the tab
   document.getElementById(EntryName).style.display = "block";
+  document.getElementById(EntryName).style.height = "100%"
   evt.currentTarget.className += " active";
 }
