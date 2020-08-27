@@ -16,6 +16,11 @@ html,body {
   padding-right: 0;
 }
 
+.linkpositioning {
+    margin: 0;
+    
+}
+
 .tab {
   float: right;
   border: 1px solid #ccc;
