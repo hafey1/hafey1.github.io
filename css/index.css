@@ -8,10 +8,6 @@ html,body {
   padding: 0;
 }
 
-iframe {
-    display:block;
-    width:100%;
-}
 
 .topbar {
   margin: 0;
