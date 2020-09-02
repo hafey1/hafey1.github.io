@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <div>
+        <head>
+        
+        <title> Robert Niggebrugge CofC CSCI 362 Fall 2020 Blog </title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+        <link type="text/css" rel="stylesheet" href="css/index.css">
+        <script src="script.js"></script>
+        
+        </head> 
+        <body>
+            <h1 class="blogentry">HW3: Chapters 11 &amp 12</h1>
+            <p class="blogentry" >Back again today to discuss the critical areas of reliablity and saftey engineering. Just some quick things I found helpful/ interesting. Reliability under the software engineering umbrella is described as the probability of failure-free operation over in a specific context. The key association here is that reliablility is refered to when describing a piece of software working in an explicit amount of time, environment, and purpose. Availability is more straight forward. It is described as the probability that at any specified time a software will be to operational and will work as intended.
+                <br>
+            Another interesting thing I came across was this table shown below from the textbook (Software Engineering 10). It contextualizes the numerical values of availability and what it means to the average user. This is just mind boggling to me. One might think that an availabilty rate of 99% would be acceptable but this graph shows how unreliable a system with an availability rate of 99% would be and how precise a system's availablity would have to be to available as much as many of todays most used systems are. 
+                <br><br>
+                    <image class="centerimage"src="images/availablility.PNG"></image>
+                <br><br>
+            </p>
+            <hr>
+            
+            <h3> Excercise Questions </h3>
+            <p>11.4) What is the common characteristics of all architectural styles that are geared to supporting software fault tolerance?
+                <li class="blogentry">
+                    The common characteristic of the proctected system, self-monitoring, and n-version programming architectures is redundancy. Each of these systems do not allow a single point of failure. The protected system has multiple sensors, backup sensors and has sensors to detect its own failures. Self-monitoring systems produce redundant computations on differing channels to detect differences and faults. N-version programming uses multiple versions of the same program that are each implemented differently on different systems.
+                </li>
+            </p>
+            
+            <hr>
+            
+            <p>11.7) It has been suggested that the control software for a radiation therapy machine, used to treat patients with cancer, should be implemented using N-version programming. Comment on whether or not you think this is a good suggestion.
+                <li class="blogentry">
+                    I believe this would not be the most optimal choice. N-version programming seeks to optimize availabilty but heavily increases cost. I would argue that reliablity and proper error handling should be more of a focus for the control software for this machine. Detection of an error and properly handling it under many different cases and contexts should be the primary concern of the control software because it is much more important to ensure patient saftey than to ensure that the machine works consistently over a long period of time.
+                </li>
+            </p>
+            
+            <hr>
+            
+            <p>11.9) Explain why you should explicitly handle all exceptions in a system that is intended to have a high level of availability.
+                <li class="blogentry"> A system that seeks the most possible uptime with correct output by necessity needs completely handled exceptions. A system that is designed to run over large periods of time will have errors or unanticipated events. If these are not handled by the system there will be undefined behavior. In these cases any number of things can happen from critical system failures to wrong calculations. Issues such as these brought about by unhandled exceptions severely impact availabilty and could be extremely hard to detect depending upon how the system behaves.
+                </li>
+            </p>
+            
+            <hr>
+            
+            <p>12.5A train protection system automatically applies the brakes of a train if the speed limit for a segment of track is exceeded, or if the train enters a track segment that is currently signaled with a red light (i.e., the segment should not be entered).  There are two critical-safety requirements for this train protection system:
+                <br><br>The train shall not enter a segment of track that is signaled with a red light.
+                <br><br>The train shall not exceed the specified speed limit for a section of track.
+                <br><br>Assuming that the signal status and the speed limit for the track segment are transmitted to on-board software on the train before it enters the track segment, propose five possible functional system requirements for the onboard software that may be generated from the system safety requirements.
+                <ol class="blogentry">
+                    
+                    <li class="blogentry">
+                    Must recieve and display to conductor the speed limit and/or signal of the next segment as entering a segment. 
+                    </li>
+                    
+                    <li class="blogentry">
+                    Must frequently check and update signal and speed limit.
+                    </li>
+                    
+                    <li class="blogentry">
+                    Must allow for manual override of braking system.
+                    </li>
+               
+                    <li class="blogentry">
+                    Must compare current speed to upcoming signal and speed limit.
+                    </li>
+                    
+                    <li class="blogentry">
+                    Must accelerate/decelerate if current speed is slower/faster than the upcoming segments speed limit respectively. 
+                    </li>
+                    
+                    <li class="blogentry">
+                    Must decelerate to a stop before entering a segment if incoming signal is red. 
+                    </li>
+                
+                </ol>
+            </p>
+        </body>
+    </div>
+</html>

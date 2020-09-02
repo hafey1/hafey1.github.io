@@ -52,6 +52,11 @@ html,body {
   transition: 0.3s;
 }
 
+.centerimage {
+    margin: 10px auto 20px;
+    display: block;
+}
+
 /* Change background color of buttons on hover */
 .tab button:hover {
   background-color: #ddd;
