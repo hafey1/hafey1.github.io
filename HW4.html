@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <div>
+        <head>
+        
+        <title> Robert Niggebrugge CofC CSCI 362 Fall 2020 Blog </title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+        <link type="text/css" rel="stylesheet" href="css/index.css">
+        <script src="script.js"></script>
+        
+        </head> 
+        <body>
+            <h1 class="blogentry">HW4: Reflections on software failures</h1>
+            <p class="blogentry" > Good evening everyone! This post is an observation upon readings that I was consuming over the course of this week. The contents commented on consisted of chapters 11, 12, 13, 14 of our textbook and an array of articles. Links to the articles are posted at the bottom!
+            <br>
+            <br>
+             Most software engineers' careers start long before they get their first job. They start when a natural curiosity or discipline yields its first results as a small piece of code when they are much younger and the rest is history. Their first programs are not the results of months of planning, specification analysis, and reviews. In today's world the skill of programming is valued so highly that it alone is enough to earn a place in the work force. This means that a vast majority of employed software engineers lack knowledge in the critical topics of safe and secure engineering when developing tools where these are necessities. This coupled with management and upper management being most likely being unfamiliar with the importance of these topics and also being the driving force for spurring on development could lead to disaster. Each of the fiascos brought up in the articles particularly showed the tension between the careful, incremental, iterative, heavily scrutinized, and correct process of creating safe and secure systems when building a safety-critical system versus what happens in the real world.<br>Such examples discussed in the articles "Motor Vehicles Increasingly Vulnerable" and all of the articles related to the FBI's initiative to build its Sentinel system and its precursors displays an incorrect prioritization of functionality over safety and security. Both of these products sought to develop beneficial results however because of the disregard for safety and security relating to the product ended up yielding detrimental results. In the case of the motor vehicles article, many cars were recalled solely because of overlooked security design flaws in WiFi and cellular capabilities. In just a single example from the many available for the Sentinel project, Matthew Patton, who worked on Sentinel's precursor VCF, commented on a complete disregard for security when it would be easy to implement. He brought up how the FBI already had tools such as Bedford that could massively improve security but was never even acknowledged because of managements incorrect prioritization on functionality over security. This is mind boggling. One of the most secretive and supposedly secure governmental institutions in the United States could not even be bothered to properly secure their own in house software.<br>On the other hand, events discussed in the Therac-25 and spacecraft accidents do not share such mind boggling lack of self-awareness, but something just as harmful. In these articles, all of the products and processes related to them had safety as a priority but did not fully explore the safety specifications and cases of use. False confidence was developed in both of these cases from the safety reviewers as it seemed the products worked according to specification up until the point of failure and even for some degree after. What was wrong were the specifications and the considered use cases by the designers and developers. They failed to account for factors such as advanced user interaction or software/hardware adaption and reuse. No system can be perfect, but it must have the capabilities to catch critical errors and provide tools that help give useful information to quickly identify unexpected errors. Participants of the system also must always be critical of each piece. There can be no blind faith that something works because it has worked in the past especially in safety-critical systems. All in all, there are many reasons for the failures of systems in these articles but the vast majority of them could be solved through diligent and thorough planning and design and constant review of a system through and after its development. However these changes will not happen until there is a shift for organizations to recognize the tangible value of these processes.
+                
+            <br>
+            Articles:
+            <br>
+                <a href="http://bowringj.people.cofc.edu/docs/therac-25.pdf" target="_blank">An Investigation of the Therac-25 Accidents</a>
+            <br>
+                <a href="http://bowringj.people.cofc.edu/classes/csci%20362/docs/The%20Radiation%20Boom%20-%20After%20Stroke%20Scans,%20Patients%20Face%20Serious%20Health%20Risks%20-%20NYTimes.com.pdf" target="_blank">Patients Face Serious Health Risks</a>
+            <br>
+                <a href="https://www.ic3.gov/media/2016/160317.aspx" target="_blank">Motor Vehicles Increasingly Vulnerable</a>
+                <br>
+                <a href="http://bowringj.people.cofc.edu/classes/csci%20362/docs/levesonSoftwareAccidentsSpacecraft.pdf" target="_blank">The Role of Software in Spacecraft Accidents</a>
+            <br>
+                <br>
+                <a href="http://bowringj.people.cofc.edu/classes/csci%20362/docs/SpectrumFBIcaseFileSytem.pdf" target="_blank">Who Killed the Virtual Case File?</a>
+            <br>
+                <br>
+                <a href="https://www.washingtonpost.com/wp-dyn/content/article/2010/10/20/AR2010102006754.html" target="_blank">FBI Sentinel Project is Over Budget</a>
+            <br>
+                <br>
+                <a href="https://www.pcmag.com/archive/years-late-and-millions-over-budget-fbis-sentinel-finally-on-line-301010" target="_blank">Years Late and Millions Over Budget</a>
+            <br>
+                <br>
+                <a href="https://spectrum.ieee.org/riskfactor/computing/it/fbis-500-million-sentinel-case-management-system-still-has-major-operational-kinks-ig-reports" target="_blank">FBI's Sentinel System Still Not In Total Shape to Surveil</a>
+            <br>
+                <br>
+                <a href="https://www.entrepreneur.com/article/329019" target="_blank">Why Software Projects Fail</a>
+            <br>
+            </p>
+        </body>
+    </div>
+</html>
