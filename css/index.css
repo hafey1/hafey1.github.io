@@ -76,6 +76,16 @@ html,body {
   border-left: none;
   height: 180px;
   overflow-y: scroll;
+  
+}
+
+.tabcontent::-webkit-scrollbar {
+    display: none;
+}
+
+.tabcontent {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .blogentry {
