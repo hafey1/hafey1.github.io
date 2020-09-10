@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>    
+    <head>
+        
+        <title> Robert Niggebrugge CofC CSCI 362 Fall 2020 Blog </title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"rel="stylesheet"> 
+        <link type="text/css" rel="stylesheet" href="css/index.css">
+        <script src="script.js"></script>
+        
+    </head> 
+        <body>
+            <h1 class="blogentry">HW1: Chapter 4 and Reflections</h1>
+            <p class="blogentry" > Today's entry </p>
+            
+            <hr>
+            
+            <h3> Excercise Questions </h3>
+            
+            <p class="blogentry">
+                4.5: Using the technique suggested here, where natural language descriptions are presented in a standard format, write plausible user requirements for the following functions:<br><br>
+                1) An unattended gas pump system that includes a credit card reader.  The customer swipesthe card through the reader, then specifies the amount of fuel required.  The fuel is delivered and the customer's account debited.<br><br>
+                2) The cash-dispensing function in a bank ATM.<br><br>
+                3) In an internet banking system, a facility that allows customers to transfer funds from one account held with the bank to another account with the same bank.
+                <ol>
+                    <li class="blogentry"> High-level: The credit card reader shall correctly process credit/debit card payments for a purchase of gas.
+                        <br>More explicit requirements<br>
+                        <br>The system shall accept and verify user's credit/debit card<br>The system shall provide PIN verification.<br>The system shall provide an interface to let the user choose the amount of gas.<br>The system shall charge the user for the purchase of gas.<br>The system shall print a receipt after a sucessful transaction.</li>
+                    <li class="blogentry"> High-level: The system shall provide an interface for a user to withdraw money from their account.<br>The system shall accept a user's account/card information<br> The system shall allow a user to choose available accounts the withdraw from<br>The system shall let a user entered how much money to withdraw.<br>The system shall dispensed the money as cash.</li>
+                    <li class="blogentry"> High-level: The system shall provide an interface to connect to and transfer funds between accounts.<br>Given that a user is already logged in, the system shall let a user start the transfer process.<br>The system shall allow a user to select an account to withdraw from.<br> The system shall let a user enter in the account to deposit to.<br> The system shall let a user enter in how much money to deposit.<br>The system shall deposit the money upon confirmation.</li>
+                </ol>
+            </p>
+            
+            <hr>
+            
+            <p class="blogentry">
+            4.6: Suggest how an engineer responsible for drawing up a system requirements specification might keep track of the relationships between functional and non-functional requirements.
+                
+                    <li class="blogentry">  Visually an engineer could keep track of the relationships by using a diagram system. I would recommend mixture of state diagrams for functional components and UML diagrams for non-functional components with specific ID's to establish relationships between state and UML diagrams as they relate to specific pieces of a system. As for determining whether a requirement should be functional or non-functional I would recommend asking the general question of "how?" or "what?". What I mean is when considering the system and a requirement asking if the requirement is answering what a system should do or answering how a system should do something. An example could be pulled from the question above. If we proposed a requirement such as "the system should be able to verify payment in 10 seconds." It is true that this statement is prescribing what a system should do but it is also saying it must do so quickly. It is directly answering how the system should work. So this requirements wording should be rephrased and should be designated as a non-functional requirement. However there are other factors to consider. Sometimes answering the how is directly necessary to the functional requirement of a system. If this is the case, it should then be considered a functional requirement.
+                    </li>
+                
+            </p>
+            
+            <hr>
+            
+            <p style="blogentry">
+            4.7: Using your knowledge of how an ATM is used, develop a set of use cases that could serve as a basis for understanding the requirements for an ATM system.  
+                    <ul>
+                        <li class="blogentry"> Withdrawing: User inserts credit/debit card. ATM verifies card. If the card is rejected, ATM notifies user of rejection and returns to home screen. User enters PIN number. If PIN is incorrect, notifies user and returns to home screen ATM verifies PIN. User selects withdraw. User enters amount. ATM verifies amount. If insufficient funds, notifies user and cancels transaction. Else ATM deposits cash. ATM prints recipt. ATM returns card. ATM returns to home screen.</li>
+                        <li class="blogentry"> Depositing: User inserts credit/debit card. ATM verifies card. If the card is rejected, ATM notifies user of rejection and returns to home screen. User enters PIN number. If PIN is incorrect, notifies user and returns to home screen ATM verifies PIN. User selects deposit. User deposits cash. ATM records amount to deposit. User selects finish deposit. ATM credits account with the deposited amount. ATM prints recipt. ATM returns card. ATM returns to home screen</li>
+                    </ul>
+            </p>
+
+    </body>
+</html>
